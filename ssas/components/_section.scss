@@ -1,0 +1,43 @@
+.section-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    color: var(--title-text-color);
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
+  
+
+  .section-title.centered {
+    text-align: center;
+  }
+
+  .section {
+    margin: 0 auto;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  
+  
+  .section.no-padding {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .section.padding-bottom {
+    padding-bottom: 94px;
+  }
+  
+
+  
+.team {
+  background-color:
+   var(--background-color);
+}
+
+
+
+
+.team-description {
+  padding: 30px 32px;
+}

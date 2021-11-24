@@ -1,28 +1,68 @@
-
 .hero {
-    background-color: var(--background-color-two);
-    text-align: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../../images/adaptive/hero/Hero480@1x.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 480px;
+  height: 480px;
+
+  @media (min-device-pixel-ratio: 2) ,
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../../images/adaptive/hero/Hero480@2x.jpg);
+  }
+  
+
+  @media screen and (min-width: 768px) {
     padding-top: 200px;
-    padding-bottom: 200px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    max-width: 1600px;
-    height: 600px;
-    margin: 0 auto;
-  }
+  padding-bottom: 200px;
+
+  background-image: url(../../images/adaptive/hero/Hero768@1x.jpg);
+
+  max-width: 768px;
   
-  .hero-title {
-    margin-top: 0%;
-    margin-bottom: 30px;
+}
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+  padding-bottom: 200px;
+
+  background-image: url(../../images/adaptive/hero/Hero1200@1x.jpg);
+
+  max-width: 1600px;
+  height: 600px;
+}
+}
+
+
+// .hero {
+//     background-color: var(--background-color-two);
+//     text-align: center;
+//     padding-top: 200px;
+//     padding-bottom: 200px;
+//     background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center;
+//     max-width: 1600px;
+//     height: 600px;
+//     margin: 0 auto;
+//   }
   
-    color: var(--hero-color);
-    background-color: var();
-    font-weight: 900px;
-    font-size: 44px;
-    line-height: 1.36;
+//   .hero-title {
+//     margin-top: 0%;
+//     margin-bottom: 30px;
   
-    letter-spacing: 0.06em;
-  }
+//     color: var(--hero-color);
+//     background-color: var();
+//     font-weight: 900px;
+//     font-size: 44px;
+//     line-height: 1.36;
+  
+//     letter-spacing: 0.06em;
+//   }
   

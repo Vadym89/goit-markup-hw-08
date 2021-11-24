@@ -904,29 +904,41 @@ li {
 }
 
 .hero {
-  background-color: var(--background-color-two);
-  text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
+  padding-top: 118px;
+  padding-bottom: 118px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../../images/adaptive/hero/Hero480@1x.jpg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  max-width: 1600px;
-  height: 600px;
-  margin: 0 auto;
+  max-width: 480px;
+  height: 480px;
 }
 
-.hero-title {
-  margin-top: 0%;
-  margin-bottom: 30px;
-  color: var(--hero-color);
-  background-color: var();
-  font-weight: 900px;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../../images/adaptive/hero/Hero480@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: url(../../images/adaptive/hero/Hero768@1x.jpg);
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: url(../../images/adaptive/hero/Hero1200@1x.jpg);
+    max-width: 1600px;
+    height: 600px;
+  }
 }
 
 .header_logo {
@@ -975,6 +987,12 @@ li {
   border: none;
 }
 
+@media screen and (min-width: 768px) {
+  .burger-btn {
+    display: none;
+  }
+}
+
 .burger-icon-icon {
   width: 40px;
   height: 40px;
@@ -989,6 +1007,17 @@ li {
   height: 100vh;
   padding: 48px 40px;
   background-color: wheat;
+  opacity: o;
+  visibility: hidden;
+  pointer-events: none;
+  -webkit-transition: opacity 250ms linear, visibility 250ms linear;
+  transition: opacity 250ms linear, visibility 250ms linear;
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
 }
 
 .close-btn {
@@ -1009,12 +1038,16 @@ li {
   height: 18.67px;
 }
 
-.site_nav {
-  display: none;
+@media screen and (max-width: 767px) {
+  .site_nav {
+    display: none;
+  }
 }
 
-.contacts_link {
-  display: none;
+@media screen and (max-width: 767px) {
+  .contacts_link {
+    display: none;
+  }
 }
 
 .feature-list {

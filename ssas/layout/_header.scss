@@ -36,13 +36,16 @@
     padding: 0;
     line-height: 0;
     border: none;
-    
 
+    @media screen and (min-width: 768px) {  
+      display: none;
+    }
   }
 
   .burger-icon-icon {
     width: 40px;
     height: 40px;
+
 
   }
 
@@ -55,6 +58,17 @@
    height: 100vh;
    padding: 48px 40px;
    background-color: wheat;
+   opacity: o;
+   visibility: hidden;
+   pointer-events: none;
+   transition: opacity 250ms linear, visibility 250ms linear;
+   
+}
+
+  .mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
   }
 
   .close-btn {
@@ -77,12 +91,18 @@
   }
   
   .site_nav {
-    display: none;
+    @media screen and (max-width: 767px) {  
+      display: none;
+    }
   }
+    
 
   .contacts_link {
-    display: none;
+    @media screen and (max-width: 767px) {  
+      display: none;
+    }
   }
+  
 //   .web {
 //     color: var(--accent-color);
 //     font-family: Raleway;

@@ -53,7 +53,6 @@ li {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  min-height: 100vh;
 }
 
 @media screen and (min-width: 480px) {
@@ -908,7 +907,7 @@ li {
   padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../../images/hero/Hero480@1x.jpg);
+  background-image: url(/images/hero/Hero480@1x.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -916,9 +915,9 @@ li {
   height: 480px;
 }
 
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url(/images/hero/Hero480@1x.jpg);
+    background-image: url(/images/hero/Hero480@2x.jpg);
   }
 }
 
@@ -931,13 +930,25 @@ li {
   }
 }
 
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(/images/hero/Hero768@2x.jpg);
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: url(/images/hero/Hero1200@1x.jpg);
+    background-image: url(//images/hero/Hero1200@1x.jpg);
     max-width: 1600px;
     height: 600px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(/images/hero/Hero1200@2x.jpg);
   }
 }
 
@@ -994,8 +1005,8 @@ li {
 }
 
 .burger-icon-icon {
-  width: 40px;
-  height: 40px;
+  width: 24px;
+  height: 16px;
 }
 
 .mobile-menu {

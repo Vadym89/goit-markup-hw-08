@@ -905,14 +905,16 @@ li {
 .hero {
   padding-top: 118px;
   padding-bottom: 118px;
-  margin-left: auto;
+  margin-left: 0;
   margin-right: auto;
   background-image: url(/images/hero/Hero480@1x.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  font-size: 24px;
+  top: 60px;
   max-width: 480px;
-  height: 480px;
+  height: 400px;
 }
 
 @media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -940,7 +942,7 @@ li {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: url(//images/hero/Hero1200@1x.jpg);
+    background-image: url(/images/hero/Hero1200@1x.jpg);
     max-width: 1600px;
     height: 600px;
   }
@@ -952,11 +954,23 @@ li {
   }
 }
 
+.hero-title {
+  text-align: center;
+  margin-top: 0%;
+  margin-bottom: 30px;
+  color: var(--hero-color);
+  background-color: var();
+  font-weight: 900px;
+  font-size: 26px;
+  line-height: 1.61;
+  letter-spacing: 0.06em;
+}
+
 .header_logo {
   color: var(--title-text-color);
   font-family: Raleway, sans-seri;
   font-weight: bold;
-  font-size: 26px;
+  font-size: 24px;
   letter-spacing: 0.03em;
   text-decoration: none;
   display: block;
@@ -1059,6 +1073,15 @@ li {
   .contacts_link {
     display: none;
   }
+}
+
+.web {
+  color: var(--accent-color);
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 .feature-list {

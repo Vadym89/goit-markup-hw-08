@@ -57,7 +57,7 @@
    width: 100vw;
    height: 100vh;
    padding: 48px 40px;
-   background-color: wheat;
+   background-color: #ffffff;
    opacity: o;
    visibility: hidden;
    pointer-events: none;
@@ -89,6 +89,30 @@
     height: 18.67px;
     
   }
+
+  .mobile-menu-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    
+    font-style: normal;
+    
+  }
+
+  .mobile-nav-link {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 40px;
+    align-content: center;
+    letter-spacing: 0.02em;
+    margin-bottom: 32px;
+    text-decoration: none;
+    color: var(--title-text-color);
+  
+  }
   
   .site_nav {
     @media screen and (max-width: 767px) {  
@@ -102,6 +126,8 @@
       display: none;
     }
   }
+
+  
   
   .web {
     color: var(--accent-color);

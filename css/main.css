@@ -907,7 +907,7 @@ li {
   padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(/images/Hero480@1x.jpg);
+  background-image: url(../../images/hero/Hero480@2x.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1032,7 +1032,7 @@ li {
   width: 100vw;
   height: 100vh;
   padding: 48px 40px;
-  background-color: wheat;
+  background-color: #ffffff;
   opacity: o;
   visibility: hidden;
   pointer-events: none;
@@ -1062,6 +1062,35 @@ li {
 .close-btn-icon {
   width: 18.67px;
   height: 18.67px;
+}
+
+.mobile-menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-style: normal;
+}
+
+.mobile-nav-link {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 40px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  letter-spacing: 0.02em;
+  margin-bottom: 32px;
+  text-decoration: none;
+  color: var(--title-text-color);
 }
 
 @media screen and (max-width: 767px) {

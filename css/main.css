@@ -1070,7 +1070,6 @@ li {
   display: flex;
   margin: 0;
   padding: 0;
-  height: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1091,6 +1090,32 @@ li {
   margin-bottom: 32px;
   text-decoration: none;
   color: var(--title-text-color);
+}
+
+.mobile_menu__item {
+  position: absolute;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.mobile__link__number {
+  width: 296px;
+  height: 40px;
+  left: 40px;
+  top: 562px;
+  font-size: 34px;
+  text-decoration: none;
+}
+
+.mobile__link__mail {
+  width: 231px;
+  height: 28px;
+  left: 40px;
+  top: 634px;
+  font-size: 24px;
+  line-height: 28px;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 767px) {
